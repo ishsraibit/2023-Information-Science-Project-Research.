@@ -4,8 +4,13 @@ public class TemperaturejavaConverterDemo {
 
 
     public static void main(String[] args) {
-        double fahrenheit =0.0;
+        double fahrenheit = 0.0 ;
         double celsius = 0.0;
+
+        char c = '\uB208';
+        //c = '나';
+        System.out.println(c);
+
         Scanner scanner = new Scanner(System.in);
         //1) Fahrenheit To Celsius 2)Celsius To Fahrenheit 3)Exit ;
         while (true){
