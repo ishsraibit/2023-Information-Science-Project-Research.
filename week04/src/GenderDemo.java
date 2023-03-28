@@ -19,6 +19,8 @@ public class GenderDemo {
             case '4':
                 System.out.println("Female");
                 break;
+            default:
+                System.out.println("Wrong ssn!");1
         }
 
     }
