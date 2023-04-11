@@ -6,6 +6,28 @@ public class Pocketmon {
     private int level;
     private int hp;
 
+    //constructor
+
+
+    public Pocketmon(String name, int level, int hp) {
+        System.out.println("포켓몬 객체 생성(매개변수3개 생성자");
+        this.name = name;
+        this.level = level;
+        this.hp = hp;
+    }
+
+    public Pocketmon(String name) {
+        //this.name = name;
+        this(name, 1,50);
+        System.out.println("포켓몬 객체 생성(매개변수1개 생성자");
+    }
+
+    public Pocketmon() {
+        System.out.println("포켓몬 객체 생성(기본 생성자)");
+
+    }
+
+    //getter, settermethods
     public int getLevel() {
         return level;
     }
