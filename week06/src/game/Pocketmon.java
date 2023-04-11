@@ -6,6 +6,7 @@ public class Pocketmon {
     private int level;
     private int hp;
 
+    private static int count = 0; //정적 변수(클래스 변수)
     //constructor
 
 
@@ -14,6 +15,11 @@ public class Pocketmon {
         this.name = name;
         this.level = level;
         this.hp = hp;
+        count++;
+    }
+
+    public static int getCount() {
+        return count;
     }
 
     public Pocketmon(String name) {
@@ -62,6 +68,11 @@ public class Pocketmon {
     }
     void attack(Pocketmon pocketmon){
         System.out.println(this.name+"가(이)"+ pocketmon.name +"에게 기본 공격을 시전합니다.");
+
+    }
+    void attack(){
+        System.out.println(this.name+"가(이) 광역 공격을 시전합니다.");
+
     }
 
 }
