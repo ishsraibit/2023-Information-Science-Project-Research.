@@ -35,11 +35,11 @@ public class Pocketmon {
     void evolve(){
         level = level+1;
         hp = hp + 10;
-        System.out.println( level + "레벨로 성장합니다.");
+        System.out.println(this.name+"가(이)"+ level + "레벨로 성장합니다.");
 
     }
-    void attack(){
-        System.out.println("기본 공격을 시전합니다.");
+    void attack(Pocketmon pocketmon){
+        System.out.println(this.name+"가(이)"+ pocketmon.name +"에게 기본 공격을 시전합니다.");
     }
 
 }

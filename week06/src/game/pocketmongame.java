@@ -14,7 +14,7 @@ public class pocketmongame {
 
 
         pikachu.evolve();
-        pikachu.attack();
+        charizard.attack(pikachu);
         charizard.evolve();
 
         System.out.println(pikachu.getLevel());
