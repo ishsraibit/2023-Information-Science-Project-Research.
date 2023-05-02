@@ -11,7 +11,10 @@ public class pocketmongame {
         Pocketmon bulbasaur = new Pocketmon();
         System.out.println(Pocketmon.getCount());
 
-
+        System.out.println(squirtle);
+        System.out.println(pikachu);
+        System.out.println(charizard);
+        System.out.println(bulbasaur);
 
         bulbasaur.setName("이상해");
         bulbasaur.attack();
