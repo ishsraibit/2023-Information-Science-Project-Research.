@@ -1,12 +1,12 @@
 package game;
 
 public class Pocketmon {
-    //encapsulation
+    //encapsulation 캡슐화
     private String name;
     private int level;
     private int hp;
 
-    private static int count = 0; //정적 변수(클래스 변수)
+    private static int count = 0; //정적 변수(클래스 변수, 필드)
     //constructor
 
 
