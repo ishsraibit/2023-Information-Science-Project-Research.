@@ -12,11 +12,11 @@ class Singleton{
         return s;
     }
 
-    @Override
-    public String toString() {
-        return "Singleton Pattern Object";
-    }
-}
+//    @Override
+//    public String toString() {
+//        return "Singleton Pattern Object";
+//    }
+//}
 public class SinglentonDemo {
     public static void main(String[] args) {
         System.out.println(Singleton.getInstance().toString());
@@ -24,14 +24,13 @@ public class SinglentonDemo {
         Singleton s1 = Singleton.getInstance();
         Singleton s2 = Singleton.getInstance();
 
-        if (s1==s2){
+        if (s1 == s2) {
             System.out.println("Same object!");
-
-
-        }
-        else{
+        } else {
             System.out.println("Different object.");
         }
+        System.out.println(s1);
+        System.out.println(s2);
     }
-
 }
+
