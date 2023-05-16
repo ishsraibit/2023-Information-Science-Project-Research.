@@ -7,6 +7,7 @@ public class Squirtle extends Pokemon{
         this.setName("squirtle");
     }
 
+
     public Squirtle(int level, int hp) {
         super();
         //this.hp=hp; this.level=level; // private access
@@ -14,6 +15,12 @@ public class Squirtle extends Pokemon{
         this.setLevel(level);
         this.setName("squirtle");
 
+
+
     }
 
+    @Override
+    void attack() {
+        System.out.println(this.getName()+" does a wide area Water Cannon attack");
+    }
 }

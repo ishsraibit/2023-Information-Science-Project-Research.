@@ -6,6 +6,10 @@ public class PocketmonGame {
         Pikachu pikachu = new Pikachu(14, 165);
         Squirtle squirtle = new Squirtle();
 
+        squirtle.attack(); // execute override method
+        pikachu.attack(); // execute super(base) class
+        charizard.attack(); // execute super(base) class method and override method
+
         System.out.println(charizard.getName());
         charizard.setName("리자몽");
         System.out.println(charizard.getName());
