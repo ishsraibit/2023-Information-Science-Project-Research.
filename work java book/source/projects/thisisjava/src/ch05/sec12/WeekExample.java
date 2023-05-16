@@ -1,34 +1,31 @@
-package ch05.sec12;
+import matplotlib.pyplot as plt 
+import numpy as np
+import pandas as pd
 
-import java.util.Calendar;
+plt.figure(dpi = 300, figsize = (8,5))
 
-public class WeekExample {
-	public static void main(String[] args) {
-		//Week 열거 타입 변수 선언
-		Week today = null;
- 
-		//Calendar 얻기
-		Calendar cal = Calendar.getInstance();
-		
-		//오늘의 요일 얻기(1~7)
-		int week = cal.get(Calendar.DAY_OF_WEEK);
+df = pd.read_excel(r'C:\Users\tkdir\Desktop\인천과학고\고등학교 2학년\수행평가 모음\지구과학\grade.xlsx')
 
-		//숫자를 열거 상수로 변환해서 변수에 대입
-		switch(week) {
-			case 1: today = Week.SUNDAY ; break;
-			case 2: today = Week.MONDAY ; break;
-			case 3: today = Week.TUESDAY ; break;
-			case 4: today = Week.WEDNESDAY ; break;
-			case 5: today = Week.THURSDAY ; break;
-			case 6: today = Week.FRIDAY ; break;
-			case 7: today = Week.SATURDAY ; break;
-		}
-		
-		//열거 타입 변수를 사용
-		if(today == Week.SUNDAY) {
-			System.out.println("일요일에는 축구를 합니다.");
-		} else {
-			System.out.println("열심히 자바를 공부합니다.");
-		}
-	}
-}
+er=([2,5,4,3,1,6,2],
+    [12,15,14,13,11,16,12])
+
+plt.bar(df['student'],df['grade'],
+        color= ['red','orange','green','magenta','tomato',
+                'violet','blue'],
+        width = 0.7,
+        edgecolor = 'k',
+        linewidth = 2,
+        yerr = er,
+        capsize = 3)
+
+plt.xticks(family = 'serif',
+           size = 11)
+plt.yticks(family = 'serif',
+           size = 11)
+
+plt.title('ojunseo',
+          family = 'serif',
+          size = 25,
+          weight = 'bold')
+
+plt.grid(axis ='y')
