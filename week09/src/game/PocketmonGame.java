@@ -1,13 +1,16 @@
 package game;
 
-public class PocketmonGame {
+public class PokemonGame {
     public static void main(String[] args) {
-        Pikachu pikachu = new Pikachu();
-        Squirtle squirtle = new Squirtle();
-        squirtle.setHp(100);
-        squirtle.setLevel(1);
-        System.out.println(squirtle.getHp());
         Charizard charizard = new Charizard();
+        Pikachu pikachu = new Pikachu();
 
+        System.out.println(charizard.getName());
+        charizard.setName("리자몽");
+        System.out.println(charizard.getName());
+        Squirtle squirtle = new Squirtle();
+        squirtle.setLevel(1);
+        squirtle.setHp(100);
+        System.out.println(squirtle.getHp());
     }
 }
