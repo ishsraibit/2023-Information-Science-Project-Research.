@@ -28,7 +28,7 @@ public class Pokemon {
     public void setName(String name) {
         this.name = name;
     }
-    void attack(){
+    public void attack(){
         System.out.println(this.name+"(이)가 " +"does a wide area attack");
     }
 }

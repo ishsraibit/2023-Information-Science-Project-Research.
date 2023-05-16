@@ -21,7 +21,7 @@ public class Charizard extends Pokemon {
     }
 
     @Override
-    void attack() {
+    public void attack() {
         super.attack();
         System.out.println(this.getName()+" does a wide area Flamethrower attack.");
     }
