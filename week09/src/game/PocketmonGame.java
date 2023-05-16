@@ -8,7 +8,6 @@ public class PocketmonGame {
         squirtle.setLevel(1);
         System.out.println(squirtle.getHp());
         Charizard charizard = new Charizard();
-        System.out.println(charizard.getName());
 
     }
 }
