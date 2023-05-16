@@ -2,14 +2,17 @@ package game;
 
 public class Pikachu extends Pokemon{
     public Pikachu() {
-        this.setHp(35); //access by setter method
-        this.setLevel(1);
-        this.setName("pikachu");
+        //private->protecteed
+        this.hp=35; // protected access(without setter)
+        this.level=1;
+        this.name="pikachu";
     }
 
     public Pikachu(int level, int hp) {
         super();
-        //this.hp=hp; this.level=level; // private access
+        this.hp=hp;
+        this.level=level; // protected access
+        this.name = "pikachu";
         this.setHp(hp); //access by setter method
         this.setLevel(level);
         this.setName("pikachu");
