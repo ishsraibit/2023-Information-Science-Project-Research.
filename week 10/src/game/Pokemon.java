@@ -29,6 +29,12 @@ public class Pokemon {
         this.name = name;
     }
     public void attack(){
-        System.out.println(this.name+"(이)가 " +"does a wide area attack");
+        System.out.println(this.name +"does a wide area attack");
     }
+
+    public void attack(Pokemon targetPokemon){
+        System.out.println(this.name+"does a attack to "+targetPokemon.name);
+    }
+
+
 }
