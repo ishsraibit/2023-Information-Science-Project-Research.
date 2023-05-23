@@ -29,10 +29,15 @@ public class Pokemon {
         this.name = name;
     }
     public void attack(){
-        System.out.println(this.name +"does a wide area attack");
+        System.out.println(this.name +" does a wide area attack");
     }
 
     public void attack(Pokemon targetPokemon){
+        if (targetPokemon instanceof Pikachu){
+            System.out.println("pika pika~");
+
+        }
+
         System.out.println(this.name+"does a attack to "+targetPokemon.name);
     }
 
