@@ -1,6 +1,7 @@
 package game;
 
-public class Pokemon {
+public abstract class Pokemon {
+    // private -> protected
     protected int level;
     protected int hp;
     protected String name;
@@ -28,18 +29,13 @@ public class Pokemon {
     public void setName(String name) {
         this.name = name;
     }
-    public void attack(){
-        System.out.println(this.name +" does a wide area attack");
-    }
+
+    public abstract void attack();
 
     public void attack(Pokemon targetPokemon){
         if (targetPokemon instanceof Pikachu){
             System.out.println("pika pika~");
-
         }
-
-        System.out.println(this.name+"does a attack to "+targetPokemon.name);
+        System.out.println(this.name + " does a attack to " + targetPokemon.name);
     }
-
-
 }

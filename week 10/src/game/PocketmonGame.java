@@ -2,6 +2,7 @@ package game;
 
 public class PocketmonGame {
     public static void main(String[] args) {
+        //Pokemon pokemon1 = new Pokemon(); //abstract class can not initiate instance
         Trainer trainer1 = new Trainer(); //default constructor by jdk
         Squirtle squirtle1 = new Squirtle();
         Charizard charizard1 = new Charizard(36,80);
