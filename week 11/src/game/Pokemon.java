@@ -1,6 +1,6 @@
 package game;
 
-public abstract class Pokemon {
+public abstract class '''Pokemon {
     // private -> protected
     protected int level;
     protected int hp;
