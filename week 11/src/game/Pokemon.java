@@ -1,18 +1,17 @@
 package game;
 
-public abstract class '''Pokemon {
-    // private -> protected
+public abstract class Pokemon {
     protected int level;
     protected int hp;
     protected String name;
-    Flybehavior flyable; //associations
+    Flybehavior flyable;  // association
 
     public void setFlyable(Flybehavior flyable) {
         this.flyable = flyable;
     }
 
     public void performFly(){
-        System.out.println(this.name+ " ");
+        System.out.print(this.name + " ");
         this.flyable.fly();
     }
 

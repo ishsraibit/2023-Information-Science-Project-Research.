@@ -14,7 +14,7 @@ public class Charizard extends Pokemon{
     }
 
     void fireInfo(){
-        System.out.println("fire");
+        System.out.println("fire~");
     }
     @Override
     public void attack() {
