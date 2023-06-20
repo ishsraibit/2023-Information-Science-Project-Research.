@@ -1,4 +1,4 @@
-package ch09.sec03.exam02;
+package sec03.exam02;
 
 public class AExample {
 	public static void main(String[] args) {
@@ -12,3 +12,4 @@ public class AExample {
 		A.B.method2();
 	}
 }
+

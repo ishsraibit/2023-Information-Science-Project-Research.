@@ -1,4 +1,4 @@
-package ch09.sec05.exam01;
+package sec05.exam01;
 
 public class A {
 	//A의 인스턴스 필드와 메소드

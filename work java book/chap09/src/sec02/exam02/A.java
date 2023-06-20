@@ -1,4 +1,4 @@
-package ch09.sec02.exam02;
+package sec02.exam02;
 
 public class A {
 	//인스턴스 멤버 클래스

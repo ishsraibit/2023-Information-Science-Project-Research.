@@ -1,4 +1,4 @@
-package ch09.sec07.exam02;
+package sec07.exam02;
 
 public class Home {
 	//필드에 익명 구현 객체 대입

@@ -1,4 +1,4 @@
-package ch09.sec04.exam02;
+package sec04.exam02;
 
 public class A {
 	//메소드
