@@ -1,30 +1,29 @@
 package game;
 
-public class PokemonGame {
+public class PocketmonGame {
     public static void main(String[] args) {
-        Digimon d1 = new Agumon();
 
         Pokemon charizard1 = new Charizard(36, 80);  // upcast
         Pokemon pikachu1 = new Pikachu(14, 165);  // upcast
         Jetpack ISHSjetPack = new Jetpack();
+        Digimon d1 = new Agumon();
 
         pikachu1.setFlyable(ISHSjetPack);
         //charizard1.setFlyable(new Wings());
-
-        try{
+        try {
             pikachu1.attack(d1);
-        }catch (Exception e){
+        } catch (Exception e){
+            System.out.println(e.getMessage());
 
         }
 
-        // anonymous object as parameter
+        //anonymous object as parameter
         charizard1.setFlyable(new Wings(){
             @Override
             public void fly() {
-                System.out.println("fly with Iron Wings!!");
+                System.out.println("fly with Iron Wings!");
             }
-        }
-
+        });
         charizard1.performFly();
         pikachu1.performFly();
 
@@ -43,7 +42,9 @@ public class PokemonGame {
         charizard2.fireInfo();
 
         Balloon ISHSballoon = new Balloon();
-        pikachu1.setFlyable(ISHSballoon);  // change strategy. JetPack to Balloon.
+        pikachu1.setFlyable(ISHSballoon);
         pikachu1.performFly();
+
+
     }
 }

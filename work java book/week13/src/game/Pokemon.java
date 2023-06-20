@@ -4,9 +4,9 @@ public abstract class Pokemon extends Animation {
     protected int level;
     protected int hp;
     protected String name;
-    FlyBehavior flyable;  // association
+    Flybehavior flyable;  // association
 
-    public void setFlyable(FlyBehavior flyable) {
+    public void setFlyable(Flybehavior flyable) {
         this.flyable = flyable;
     }
 
@@ -41,14 +41,14 @@ public abstract class Pokemon extends Animation {
 
     public abstract void attack();
 
-    public void attack(Pokemon targetPokemon) throws Exception{
-        if(targetPokemon instanceof Digimon){
-            throw new Exception("포켓몬이 아닙니다");
+    public void attack(Animation target) throws Exception{
+        if(target instanceof Digimon){
+            throw new Exception("target is Not a Pokemonster!");
+        }else if (this instanceof Pokemon){
+            if (this instanceof Pikachu)
+                System.out.println("pika pika~");
         }
-
-        if (this instanceof Pikachu){
-            System.out.println("pika pika~");
-        }
+        Pokemon targetPokemon = (Pokemon)target;
         System.out.println(this.name + " does a attack to " + targetPokemon.name);
     }
 }
