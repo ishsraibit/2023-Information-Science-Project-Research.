@@ -1,5 +1,7 @@
 package game;
 
+import java.util.HashMap;
+
 public abstract class Pokemon extends Animation {
     protected int level;
     protected int hp;
@@ -50,5 +52,11 @@ public abstract class Pokemon extends Animation {
         }
         Pokemon targetPokemon = (Pokemon)target;
         System.out.println(this.name + " does a attack to " + targetPokemon.name);
+    }
+
+    @Override
+    public String toString() {
+        return this.getName() + "@" + "[Hashcode: " +Integer.toHexString(hashCode())+ "]";
+
     }
 }

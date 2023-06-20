@@ -10,6 +10,9 @@ public class PocketmonGame {
 
         pikachu1.setFlyable(ISHSjetPack);
         //charizard1.setFlyable(new Wings());
+
+        System.out.println(pikachu1);
+
         try {
             pikachu1.attack(d1);
         } catch (Exception e){
